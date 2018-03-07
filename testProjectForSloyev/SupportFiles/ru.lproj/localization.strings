@@ -1,0 +1,73 @@
+/* 
+  localization.strings
+  testProjectForSloyev
+
+  Created by Dennis Ritchie on 3/5/18.
+  Copyright © 2018 Dennis Ritchie. All rights reserved.
+*/
+
+"alert_done_bnt" = "Ок";
+
+//SloyevLoginTableViewController
+"SloyevLoginTableViewController_title" = "Тест";
+"SloyevLoginTableViewController_data_for_login" = "Данные для входа";
+"SloyevLoginTableViewController_login_field" = "Логин";
+"SloyevLoginTableViewController_password_field" = "Пароль";
+"SloyevLoginTableViewController_login_btn" = "Вход";
+"SloyevLoginTableViewController_forget_password" = "Забыл пароль?";
+"SloyevLoginTableViewController_dont_have_acc" = "У вас еще нет аккаунта?";
+"SloyevLoginTableViewController_register" = "Зарегистрироваться";
+"SloyevLoginTableViewController_forget_password_alert_message" = "Введите логин";
+"SloyevLoginTableViewController_forget_password_alert_cancel_done" = "Готово";
+"SloyevLoginTableViewController_forget_password_alert_cancel_btn" = "Отмена";
+"SloyevLoginTableViewController_forget_password_success" = "Новый пароль выслан на почту";
+
+//SloyevRegistrationTableViewController
+"SloyevRegistrationTableViewController_title" = "Регистрация";
+"SloyevRegistrationTableViewController_personal_data_label" = "Личные данные";
+"SloyevRegistrationTableViewController_login_field" = "Логин";
+"SloyevRegistrationTableViewController_password_field" = "Пароль";
+"SloyevRegistrationTableViewController_approve_password_field" = "Подтвердите пароль";
+"SloyevRegistrationTableViewController_first_name_field" = "Имя";
+"SloyevRegistrationTableViewController_second_name_field" = "Фамилия";
+"SloyevRegistrationTableViewController_gender_field" = "Пол";
+"SloyevRegistrationTableViewController_birth_day_field" = "Дата рождения";
+"SloyevRegistrationTableViewController_growth_field" = "Рост";
+"SloyevRegistrationTableViewController_weight_field" = "Вес";
+"SloyevRegistrationTableViewController_select_photo_from_galerry" = "Галерея";
+"SloyevRegistrationTableViewController_select_photo_from_camera" = "Камера";
+"SloyevRegistrationTableViewController_select_photo_cancel" = "Отмена";
+
+"SloyevRegistrationTableViewController_select_gender_male" = "Мужской";
+"SloyevRegistrationTableViewController_select_gender_female" = "Женский";
+
+"SloyevRegistrationTableViewController_select_weight_units" = "кг";
+"SloyevRegistrationTableViewController_select_growth_units" = "см";
+
+//SloyevProfileTableViewController
+"SloyevProfileTableViewController_title" = "Профиль";
+"SloyevProfileTableViewController_personal_data_label" = "Личные данные";
+"SloyevProfileTableViewController_logout" = "Выход";
+"SloyevProfileTableViewController_question" = "Вы действительно хотите выйти?";
+"SloyevProfileTableViewController_logout_yes" = "Подтвердить";
+"SloyevProfileTableViewController_logout_cancel" = "Отмена";
+
+//SloyevPicker
+"SloyevPicker_cancel" = "Отмена";
+"SloyevPicker_done" = "Готово";
+
+//field validation errors
+"error_empty_email" = "Введите E-mail адресс";
+"error_not_valid_email" = "E-mail не корректный";
+"error_empty_password" = "Введите пароль";
+"error_not_valid_password" = "Неверный пароль, пароль должен состоять от 8 до 20 символов, Латинские буквы, Минимум одна цифра, Минимум одна заглавная буква";
+"error_password_does_not_match" = "Пароли не совпадают";
+"error_first_name_is_empty" = "Введите имя";
+"error_second_name_is_empty" = "Введите фамилию";
+"error_gender_is_empty" = "Укажите пол";
+"error_select_birth_date" = "Укажите день рождения";
+"error_growth_is_empty" = "Укажите рост";
+"error_weight_is_empty" = "Укажите вес";
+"error_avatar_is_empty" = "Укажите аватар";
+"error_unknowed_server_error" = "Неизвестная ошибка сервера";
+"error_no_data" = "Неизвестная ошибка";

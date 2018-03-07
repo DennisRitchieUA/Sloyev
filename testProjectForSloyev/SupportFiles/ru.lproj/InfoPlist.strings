@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  HubbleBubble
+
+  Created by Dennis Ritchie on 24.11.16.
+  Copyright © 2016 Dennis Ritchie. All rights reserved.
+*/
+"NSPhotoLibraryUsageDescription" = "Фотогалерея используется для выбора изображения профиля";
+"NSCameraUsageDescription" = "Камера используется для выбора изображения профиля";

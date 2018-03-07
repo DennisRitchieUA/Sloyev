@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dgc-Hv-heu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sloyev Login Table View Controller-->
+        <scene sceneID="MaI-xh-oZx">
+            <objects>
+                <tableViewController storyboardIdentifier="SloyevLoginTableViewController" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PFG-ee-hLq" customClass="SloyevLoginTableViewController" customModule="testProjectForSloyev" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4hM-BT-DUP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.9723265767" green="0.97647422549999996" blue="0.98048216099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SloyevLoginCell" rowHeight="93" id="NLZ-9B-zzp" customClass="SloyevLoginCell" customModule="testProjectForSloyev" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="93"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NLZ-9B-zzp" id="Omb-p7-t4l">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SHf-9e-6kL">
+                                            <rect key="frame" x="6" y="0.0" width="363" height="46"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="46" id="2sF-Hr-Suw"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dp9-gr-4oN">
+                                            <rect key="frame" x="6" y="47" width="363" height="46"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="46" id="V3O-9h-QQz"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                        </textField>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yV0-7f-iV1">
+                                            <rect key="frame" x="6" y="46" width="363" height="1"/>
+                                            <color key="backgroundColor" red="0.91005510091781616" green="0.87999480962753296" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="0jv-TN-3vq" customClass="SloyevRealPixelLayoutConstraint" customModule="testProjectForSloyev" customModuleProvider="target"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.9723265767" green="0.97647422549999996" blue="0.98048216099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="dp9-gr-4oN" secondAttribute="bottom" id="2Pd-Nx-TZr"/>
+                                        <constraint firstItem="SHf-9e-6kL" firstAttribute="leading" secondItem="Omb-p7-t4l" secondAttribute="leading" constant="6" id="3aF-c5-zHC"/>
+                                        <constraint firstItem="yV0-7f-iV1" firstAttribute="top" secondItem="SHf-9e-6kL" secondAttribute="bottom" id="3af-Rj-pZq"/>
+                                        <constraint firstAttribute="trailing" secondItem="yV0-7f-iV1" secondAttribute="trailing" constant="6" id="GJ5-Cl-QQ2"/>
+                                        <constraint firstItem="dp9-gr-4oN" firstAttribute="leading" secondItem="Omb-p7-t4l" secondAttribute="leading" constant="6" id="RGz-BM-3AC"/>
+                                        <constraint firstItem="dp9-gr-4oN" firstAttribute="top" secondItem="yV0-7f-iV1" secondAttribute="bottom" id="ZJO-ez-90F"/>
+                                        <constraint firstItem="SHf-9e-6kL" firstAttribute="top" secondItem="Omb-p7-t4l" secondAttribute="top" id="dPg-yH-wGg"/>
+                                        <constraint firstAttribute="trailing" secondItem="SHf-9e-6kL" secondAttribute="trailing" constant="6" id="taI-fh-W3Y"/>
+                                        <constraint firstItem="yV0-7f-iV1" firstAttribute="leading" secondItem="Omb-p7-t4l" secondAttribute="leading" constant="6" id="tpi-2Q-tRG"/>
+                                        <constraint firstAttribute="trailing" secondItem="dp9-gr-4oN" secondAttribute="trailing" constant="6" id="zS8-nb-uzw"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.9723265767" green="0.97647422549999996" blue="0.98048216099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="loginField" destination="SHf-9e-6kL" id="Cd5-Ne-zVd"/>
+                                    <outlet property="passwordField" destination="dp9-gr-4oN" id="Ax7-3m-t7b"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="PFG-ee-hLq" id="dce-gi-eVG"/>
+                            <outlet property="delegate" destination="PFG-ee-hLq" id="Rr6-Im-PdL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="OAK-UV-RhN"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="autolocalizationKey" value="SloyevLoginTableViewController_title"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="forgetPasswordBtn" destination="426-Jf-LtP" id="9Ns-jm-qgq"/>
+                        <outlet property="loginBtn" destination="7nV-dv-lj3" id="hQD-Mo-Qyk"/>
+                        <outlet property="registerBtn" destination="ETJ-CJ-pU1" id="6Ln-Fb-36A"/>
+                        <outlet property="tableViewFooterView" destination="lkd-2K-Dbd" id="LDm-tI-BeQ"/>
+                        <outlet property="tableViewHeaderView" destination="ELC-Ta-ejP" id="C0G-VR-gOc"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qpt-jb-Oog" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="ELC-Ta-ejP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOR-Ng-o1h">
+                            <rect key="frame" x="133" y="5" width="109" height="41"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="34"/>
+                            <color key="textColor" red="0.28636467456817627" green="0.27333548665046692" blue="0.33128622174263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w2X-dz-Edn">
+                            <rect key="frame" x="6" y="91" width="363" height="34"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Данные для входа" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H16-iX-8j1">
+                                    <rect key="frame" x="120.5" y="9.5" width="123" height="16"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                    <color key="textColor" red="0.28636467459999998" green="0.27333548670000002" blue="0.33128622169999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="autolocalizationKey" value="SloyevLoginTableViewController_data_for_login"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.92521053552627563" green="0.92904072999954224" blue="0.95382446050643921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="H16-iX-8j1" firstAttribute="centerY" secondItem="w2X-dz-Edn" secondAttribute="centerY" id="Kbk-Vy-rNh"/>
+                                <constraint firstItem="H16-iX-8j1" firstAttribute="centerX" secondItem="w2X-dz-Edn" secondAttribute="centerX" id="Qic-jx-93S"/>
+                                <constraint firstAttribute="height" constant="34" id="aIa-D7-lYw"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97232657670974731" green="0.97647422552108765" blue="0.98048216104507446" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="w2X-dz-Edn" secondAttribute="trailing" constant="6" id="BtJ-eC-fQL"/>
+                        <constraint firstItem="w2X-dz-Edn" firstAttribute="top" secondItem="oOR-Ng-o1h" secondAttribute="bottom" constant="45" id="Ieh-Pf-97H"/>
+                        <constraint firstItem="oOR-Ng-o1h" firstAttribute="centerX" secondItem="ELC-Ta-ejP" secondAttribute="centerX" id="Ui2-5d-smy"/>
+                        <constraint firstItem="w2X-dz-Edn" firstAttribute="leading" secondItem="ELC-Ta-ejP" secondAttribute="leading" constant="6" id="del-Uu-Vdb"/>
+                        <constraint firstAttribute="bottom" secondItem="w2X-dz-Edn" secondAttribute="bottom" id="zdg-HD-P2B"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="t6b-KB-Jcq"/>
+                </view>
+                <view contentMode="scaleToFill" id="lkd-2K-Dbd">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="189"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nV-dv-lj3">
+                            <rect key="frame" x="6" y="12" width="363" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="8JY-bt-ILf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" red="0.28636467459999998" green="0.27333548670000002" blue="0.33128622169999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="autolocalizationKey" value="SloyevLoginTableViewController_login_btn"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="loginAction:" destination="PFG-ee-hLq" eventType="touchUpInside" id="CIt-9P-Xo5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="426-Jf-LtP">
+                            <rect key="frame" x="0.0" y="57" width="375" height="33"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="33" id="5Bs-4b-FT1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" red="0.6548340916633606" green="0.65040445327758789" blue="0.68347829580307007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="autolocalizationKey" value="SloyevLoginTableViewController_forget_password"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="forgetPasswordAction:" destination="PFG-ee-hLq" eventType="touchUpInside" id="QBX-47-i4g"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETJ-CJ-pU1" customClass="SloyevGradientButton" customModule="testProjectForSloyev" customModuleProvider="target">
+                            <rect key="frame" x="6" y="136" width="363" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="vdi-JW-BRO"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="registerAction:" destination="PFG-ee-hLq" eventType="touchUpInside" id="NCt-R9-bTE"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.9723265767" green="0.97647422549999996" blue="0.98048216099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="426-Jf-LtP" secondAttribute="trailing" id="E8r-0S-1cc"/>
+                        <constraint firstItem="426-Jf-LtP" firstAttribute="top" secondItem="7nV-dv-lj3" secondAttribute="bottom" id="KZQ-LZ-U38"/>
+                        <constraint firstItem="ETJ-CJ-pU1" firstAttribute="leading" secondItem="Kvn-xJ-wHr" secondAttribute="leading" constant="6" id="TcG-33-Wc5"/>
+                        <constraint firstAttribute="bottom" secondItem="ETJ-CJ-pU1" secondAttribute="bottom" constant="8" id="Trt-Sc-WND"/>
+                        <constraint firstItem="7nV-dv-lj3" firstAttribute="top" secondItem="lkd-2K-Dbd" secondAttribute="top" constant="12" id="baw-rG-9It"/>
+                        <constraint firstItem="426-Jf-LtP" firstAttribute="leading" secondItem="lkd-2K-Dbd" secondAttribute="leading" id="d8X-3M-Nwi"/>
+                        <constraint firstItem="Kvn-xJ-wHr" firstAttribute="trailing" secondItem="ETJ-CJ-pU1" secondAttribute="trailing" constant="6" id="kXC-uE-l35"/>
+                        <constraint firstAttribute="trailing" secondItem="7nV-dv-lj3" secondAttribute="trailing" constant="6" id="qmd-YX-hHu"/>
+                        <constraint firstItem="7nV-dv-lj3" firstAttribute="leading" secondItem="lkd-2K-Dbd" secondAttribute="leading" constant="6" id="xPS-YL-vZY"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="Kvn-xJ-wHr"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="424.80000000000001" y="188.45577211394306"/>
+        </scene>
+        <!--Sloyev Registration Table View Controller-->
+        <scene sceneID="rNX-Wf-NVS">
+            <objects>
+                <tableViewController storyboardIdentifier="SloyevRegistrationTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="O4i-a0-mS6" customClass="SloyevRegistrationTableViewController" customModule="testProjectForSloyev" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ejk-Pg-KAo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.9723265767" green="0.97647422549999996" blue="0.98048216099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <outlet property="dataSource" destination="O4i-a0-mS6" id="Von-qG-dEZ"/>
+                            <outlet property="delegate" destination="O4i-a0-mS6" id="x2R-Rx-p9Y"/>
+                        </connections>
+                    </tableView>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="autolocalizationKey" value="SloyevRegistrationTableViewController_title"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="avatarImageView" destination="boB-bz-i9B" id="pTd-jl-mkZ"/>
+                        <outlet property="tableFooterView" destination="OOV-dF-6GP" id="SWR-L7-xK7"/>
+                        <outlet property="tableViewHeaderView" destination="MaU-FG-FFP" id="cuL-N6-y1T"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ymJ-Ae-pBx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="MaU-FG-FFP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AsZ-JX-FS0">
+                            <rect key="frame" x="6" y="42" width="363" height="143"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x91-FA-sTq">
+                            <rect key="frame" x="6" y="8" width="363" height="34"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Личные данные" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewq-Y7-4Wf">
+                                    <rect key="frame" x="14" y="10" width="100.5" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                    <color key="textColor" red="0.28636467459999998" green="0.27333548670000002" blue="0.33128622169999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="autolocalizationKey" value="SloyevRegistrationTableViewController_personal_data_label"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.92521053549999999" green="0.92904072999999998" blue="0.95382446050000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="ewq-Y7-4Wf" firstAttribute="centerY" secondItem="x91-FA-sTq" secondAttribute="centerY" id="30F-2D-f0Q"/>
+                                <constraint firstAttribute="height" constant="34" id="3dB-jw-cU9"/>
+                                <constraint firstItem="ewq-Y7-4Wf" firstAttribute="leading" secondItem="x91-FA-sTq" secondAttribute="leading" constant="14" id="XqE-Mb-p4y"/>
+                            </constraints>
+                        </view>
+                        <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addPhotoImage" translatesAutoresizingMaskIntoConstraints="NO" id="bNA-R8-PzC">
+                            <rect key="frame" x="124" y="52" width="127" height="127"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="127" id="PUa-lN-cBM"/>
+                                <constraint firstAttribute="height" constant="127" id="RNw-u4-NSq"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="Yau-Rs-n3x" appends="YES" id="ISy-8l-42I"/>
+                            </connections>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="boB-bz-i9B">
+                            <rect key="frame" x="124" y="52.5" width="127" height="127"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.9723265767" green="0.97647422549999996" blue="0.98048216099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="x91-FA-sTq" secondAttribute="trailing" constant="6" id="1GO-cP-PUQ"/>
+                        <constraint firstItem="bNA-R8-PzC" firstAttribute="width" secondItem="boB-bz-i9B" secondAttribute="width" id="5dP-Vr-4rR"/>
+                        <constraint firstItem="AsZ-JX-FS0" firstAttribute="top" secondItem="x91-FA-sTq" secondAttribute="bottom" id="7WP-Mo-vS7"/>
+                        <constraint firstItem="bNA-R8-PzC" firstAttribute="centerX" secondItem="MaU-FG-FFP" secondAttribute="centerX" id="BLD-Fu-yaJ"/>
+                        <constraint firstItem="AsZ-JX-FS0" firstAttribute="leading" secondItem="MaU-FG-FFP" secondAttribute="leading" constant="6" id="Bvu-1k-fhG"/>
+                        <constraint firstItem="x91-FA-sTq" firstAttribute="leading" secondItem="MaU-FG-FFP" secondAttribute="leading" constant="6" id="CII-2W-a1L"/>
+                        <constraint firstItem="bNA-R8-PzC" firstAttribute="height" secondItem="boB-bz-i9B" secondAttribute="height" id="Ex2-f0-BIy"/>
+                        <constraint firstItem="bNA-R8-PzC" firstAttribute="top" secondItem="x91-FA-sTq" secondAttribute="bottom" constant="10" id="Hir-fA-zY0"/>
+                        <constraint firstAttribute="trailing" secondItem="AsZ-JX-FS0" secondAttribute="trailing" constant="6" id="KVX-cI-psC"/>
+                        <constraint firstItem="bNA-R8-PzC" firstAttribute="centerX" secondItem="boB-bz-i9B" secondAttribute="centerX" id="S9U-0O-G88"/>
+                        <constraint firstItem="x91-FA-sTq" firstAttribute="top" secondItem="MaU-FG-FFP" secondAttribute="top" constant="8" id="bU5-rg-4O0"/>
+                        <constraint firstItem="bNA-R8-PzC" firstAttribute="centerY" secondItem="boB-bz-i9B" secondAttribute="centerY" id="pGU-pc-YDA"/>
+                        <constraint firstAttribute="bottom" secondItem="AsZ-JX-FS0" secondAttribute="bottom" id="y5N-v5-EdU"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="gn9-Bj-ufi"/>
+                </view>
+                <view contentMode="scaleToFill" id="OOV-dF-6GP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYy-of-OHN" customClass="SloyevGradientButton" customModule="testProjectForSloyev" customModuleProvider="target">
+                            <rect key="frame" x="6" y="6" width="363" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="1nQ-lj-A6c"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="autolocalizationKey" value="SloyevRegistrationTableViewController_title"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="registrationAction:" destination="O4i-a0-mS6" eventType="touchUpInside" id="pFa-QX-qLE"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.9723265767" green="0.97647422549999996" blue="0.98048216099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="xYy-of-OHN" secondAttribute="bottom" constant="6" id="Bie-pr-p08"/>
+                        <constraint firstItem="xYy-of-OHN" firstAttribute="leading" secondItem="OOV-dF-6GP" secondAttribute="leading" constant="6" id="Zhq-yN-emr"/>
+                        <constraint firstAttribute="trailing" secondItem="xYy-of-OHN" secondAttribute="trailing" constant="6" id="fFt-Bz-Aws"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="wb4-DB-Wuc"/>
+                </view>
+                <tapGestureRecognizer id="Yau-Rs-n3x">
+                    <connections>
+                        <action selector="selectAvatar:" destination="O4i-a0-mS6" id="8Qp-iX-TDY"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1093.5999999999999" y="187.55622188905548"/>
+        </scene>
+        <!--Sloyev Profile Table View Controller-->
+        <scene sceneID="odQ-60-Fd6">
+            <objects>
+                <tableViewController storyboardIdentifier="SloyevProfileTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N8m-xA-VPA" customClass="SloyevProfileTableViewController" customModule="testProjectForSloyev" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BFc-hc-nv7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="VhZ-1Q-a2B">
+                            <rect key="frame" x="0.0" y="72" width="375" height="47"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UgU-Fu-6Mr">
+                                    <rect key="frame" x="6" y="0.0" width="363" height="47"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTI-0e-HOh">
+                                    <rect key="frame" x="56" y="0.0" width="319" height="47"/>
+                                    <color key="tintColor" red="0.28627450980000002" green="0.27450980390000002" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" red="0.28627450980000002" green="0.27450980390000002" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoutImage" translatesAutoresizingMaskIntoConstraints="NO" id="9yh-zO-8Ni">
+                                    <rect key="frame" x="6" y="0.0" width="47" height="47"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="9yh-zO-8Ni" secondAttribute="height" multiplier="1:1" id="Vtt-OF-T7x"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2O-z0-lWZ">
+                                    <rect key="frame" x="56" y="0.0" width="319" height="47"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                    <state key="normal" title="Выход">
+                                        <color key="titleColor" red="0.28627450980000002" green="0.27450980390000002" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="autolocalizationKey" value="SloyevProfileTableViewController_logout"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="logoutAction:" destination="N8m-xA-VPA" eventType="touchUpInside" id="3kX-qI-oI5"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.9723265767" green="0.97647422549999996" blue="0.98048216099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="WTI-0e-HOh" secondAttribute="bottom" id="2Ra-gw-iFz"/>
+                                <constraint firstAttribute="bottom" secondItem="m2O-z0-lWZ" secondAttribute="bottom" id="36a-bM-nuR"/>
+                                <constraint firstAttribute="trailing" secondItem="UgU-Fu-6Mr" secondAttribute="trailing" constant="6" id="8tb-00-zPd"/>
+                                <constraint firstItem="9yh-zO-8Ni" firstAttribute="top" secondItem="VhZ-1Q-a2B" secondAttribute="top" id="BrD-5m-Dtq"/>
+                                <constraint firstItem="m2O-z0-lWZ" firstAttribute="top" secondItem="VhZ-1Q-a2B" secondAttribute="top" id="D4S-Bc-u5q"/>
+                                <constraint firstItem="9yh-zO-8Ni" firstAttribute="width" secondItem="9yh-zO-8Ni" secondAttribute="height" multiplier="1:1" id="Dbh-fs-4jf"/>
+                                <constraint firstAttribute="trailing" secondItem="WTI-0e-HOh" secondAttribute="trailing" id="IEn-dZ-rQz"/>
+                                <constraint firstItem="WTI-0e-HOh" firstAttribute="leading" secondItem="9yh-zO-8Ni" secondAttribute="trailing" constant="3" id="JDw-h6-EL9"/>
+                                <constraint firstAttribute="bottom" secondItem="9yh-zO-8Ni" secondAttribute="bottom" id="VVg-8W-qD5"/>
+                                <constraint firstItem="WTI-0e-HOh" firstAttribute="top" secondItem="VhZ-1Q-a2B" secondAttribute="top" id="a7R-Eh-WAV"/>
+                                <constraint firstItem="UgU-Fu-6Mr" firstAttribute="top" secondItem="VhZ-1Q-a2B" secondAttribute="top" id="bJy-JX-oXJ"/>
+                                <constraint firstAttribute="bottom" secondItem="UgU-Fu-6Mr" secondAttribute="bottom" id="ivq-G5-THm"/>
+                                <constraint firstItem="m2O-z0-lWZ" firstAttribute="leading" secondItem="9yh-zO-8Ni" secondAttribute="trailing" constant="3" id="kkN-rQ-YmR"/>
+                                <constraint firstItem="9yh-zO-8Ni" firstAttribute="leading" secondItem="VhZ-1Q-a2B" secondAttribute="leading" constant="6" id="mqd-Wp-5UE"/>
+                                <constraint firstItem="UgU-Fu-6Mr" firstAttribute="leading" secondItem="VhZ-1Q-a2B" secondAttribute="leading" constant="6" id="v6w-Fc-hky"/>
+                                <constraint firstAttribute="trailing" secondItem="m2O-z0-lWZ" secondAttribute="trailing" id="w4O-up-6NP"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wve-Xx-ghu">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wve-Xx-ghu" id="dzQ-Mn-8OM">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="N8m-xA-VPA" id="HeF-nD-ghy"/>
+                            <outlet property="delegate" destination="N8m-xA-VPA" id="Kns-Kc-Yff"/>
+                        </connections>
+                    </tableView>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="autolocalizationKey" value="SloyevProfileTableViewController_title"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="avatarImageView" destination="jNZ-dD-iTP" id="Mxy-wt-IkA"/>
+                        <outlet property="tableViewHeaderView" destination="Fb5-4Z-pYZ" id="IyQ-Rg-izJ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cTJ-1b-OMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="Fb5-4Z-pYZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SiT-bS-LwN">
+                            <rect key="frame" x="6" y="42" width="363" height="143"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70n-Ly-rBf">
+                            <rect key="frame" x="6" y="8" width="363" height="34"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Личные данные" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQl-28-U6C">
+                                    <rect key="frame" x="14" y="10" width="100.5" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                    <color key="textColor" red="0.28636467459999998" green="0.27333548670000002" blue="0.33128622169999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="autolocalizationKey" value="SloyevProfileTableViewController_personal_data_label"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.92521053549999999" green="0.92904072999999998" blue="0.95382446050000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="AQl-28-U6C" firstAttribute="centerY" secondItem="70n-Ly-rBf" secondAttribute="centerY" id="q0S-Kv-nMv"/>
+                                <constraint firstItem="AQl-28-U6C" firstAttribute="leading" secondItem="70n-Ly-rBf" secondAttribute="leading" constant="14" id="qAR-EP-pCv"/>
+                                <constraint firstAttribute="height" constant="34" id="qMf-Fm-jHY"/>
+                            </constraints>
+                        </view>
+                        <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jNZ-dD-iTP">
+                            <rect key="frame" x="124" y="52" width="127" height="127"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="127" id="Rdt-ao-7Wm"/>
+                                <constraint firstAttribute="width" constant="127" id="gxh-fT-Hqf"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="8RK-yW-GRR" appends="YES" id="XGi-Aw-UHZ"/>
+                            </connections>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.9723265767" green="0.97647422549999996" blue="0.98048216099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="jNZ-dD-iTP" firstAttribute="centerX" secondItem="Fb5-4Z-pYZ" secondAttribute="centerX" id="0CQ-oM-may"/>
+                        <constraint firstItem="SiT-bS-LwN" firstAttribute="leading" secondItem="Fb5-4Z-pYZ" secondAttribute="leading" constant="6" id="4Gh-p2-2k8"/>
+                        <constraint firstItem="jNZ-dD-iTP" firstAttribute="top" secondItem="70n-Ly-rBf" secondAttribute="bottom" constant="10" id="63P-LI-DwU"/>
+                        <constraint firstItem="70n-Ly-rBf" firstAttribute="top" secondItem="Fb5-4Z-pYZ" secondAttribute="top" constant="8" id="7Df-2Q-06x"/>
+                        <constraint firstItem="SiT-bS-LwN" firstAttribute="top" secondItem="70n-Ly-rBf" secondAttribute="bottom" id="MmH-L3-cuy"/>
+                        <constraint firstItem="70n-Ly-rBf" firstAttribute="leading" secondItem="Fb5-4Z-pYZ" secondAttribute="leading" constant="6" id="app-Qc-7uc"/>
+                        <constraint firstAttribute="trailing" secondItem="SiT-bS-LwN" secondAttribute="trailing" constant="6" id="e8p-MG-wtP"/>
+                        <constraint firstAttribute="bottom" secondItem="SiT-bS-LwN" secondAttribute="bottom" id="eeI-7g-mYL"/>
+                        <constraint firstAttribute="trailing" secondItem="70n-Ly-rBf" secondAttribute="trailing" constant="6" id="zWY-pg-cZp"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="UjO-5n-051"/>
+                </view>
+                <tapGestureRecognizer id="8RK-yW-GRR">
+                    <connections>
+                        <action selector="selectAvatar:" destination="N8m-xA-VPA" id="B1K-0L-w4U"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1784.8" y="187.55622188905548"/>
+        </scene>
+        <!--Sloyev NavVC-->
+        <scene sceneID="fzl-Fg-UMH">
+            <objects>
+                <navigationController storyboardIdentifier="SloyevNavVC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Dgc-Hv-heu" customClass="SloyevNavVC" customModule="testProjectForSloyev" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mQe-1r-BsC">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PFG-ee-hLq" kind="relationship" relationship="rootViewController" id="hre-mB-ghc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cjJ-37-3b7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-289" y="188"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="addPhotoImage" width="381" height="381"/>
+        <image name="logoutImage" width="138" height="138"/>
+    </resources>
+</document>

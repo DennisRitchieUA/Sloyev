@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SloyevRegistrationOneFieldCell" rowHeight="47" id="hAV-Hf-B5c" customClass="SloyevRegistrationOneFieldCell" customModule="testProjectForSloyev" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hAV-Hf-B5c" id="HQ9-x5-MVg">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="46.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBh-5C-HaS">
+                        <rect key="frame" x="6" y="0.0" width="363" height="47"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6co-V4-vbc">
+                        <rect key="frame" x="6" y="0.0" width="46" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="6co-V4-vbc" secondAttribute="height" multiplier="1:1" id="mEw-fm-UyK"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QJB-sf-mQt">
+                        <rect key="frame" x="55" y="0.0" width="320" height="47"/>
+                        <color key="tintColor" red="0.28627450980000002" green="0.27450980390000002" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="textColor" red="0.28627450980000002" green="0.27450980390000002" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahe-Vs-ku9">
+                        <rect key="frame" x="6" y="46" width="363" height="1"/>
+                        <color key="backgroundColor" red="0.91005510089999997" green="0.87999480959999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="N8D-4M-xIG" customClass="SloyevRealPixelLayoutConstraint" customModule="testProjectForSloyev" customModuleProvider="target"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.9723265767" green="0.97647422549999996" blue="0.98048216099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="XBh-5C-HaS" firstAttribute="top" secondItem="HQ9-x5-MVg" secondAttribute="top" id="A0M-bS-zu0"/>
+                    <constraint firstItem="6co-V4-vbc" firstAttribute="leading" secondItem="HQ9-x5-MVg" secondAttribute="leading" constant="6" id="FBF-uH-Q1a"/>
+                    <constraint firstItem="XBh-5C-HaS" firstAttribute="leading" secondItem="6co-V4-vbc" secondAttribute="leading" id="NbM-yT-IRR"/>
+                    <constraint firstAttribute="bottom" secondItem="XBh-5C-HaS" secondAttribute="bottom" id="Q77-Y7-RZ7"/>
+                    <constraint firstItem="6co-V4-vbc" firstAttribute="top" secondItem="HQ9-x5-MVg" secondAttribute="top" id="RiK-7O-XEV"/>
+                    <constraint firstAttribute="bottom" secondItem="6co-V4-vbc" secondAttribute="bottom" constant="1" id="b2B-4A-po4"/>
+                    <constraint firstAttribute="bottom" secondItem="QJB-sf-mQt" secondAttribute="bottom" id="bJC-aa-IAx"/>
+                    <constraint firstAttribute="trailing" secondItem="ahe-Vs-ku9" secondAttribute="trailing" constant="6" id="dyp-Hj-JKG"/>
+                    <constraint firstItem="QJB-sf-mQt" firstAttribute="top" secondItem="HQ9-x5-MVg" secondAttribute="top" id="ggC-Gw-W8I"/>
+                    <constraint firstItem="ahe-Vs-ku9" firstAttribute="leading" secondItem="HQ9-x5-MVg" secondAttribute="leading" constant="6" id="kY0-Vn-EPH"/>
+                    <constraint firstAttribute="trailing" secondItem="QJB-sf-mQt" secondAttribute="trailing" id="m6A-yr-3QG"/>
+                    <constraint firstAttribute="bottom" secondItem="ahe-Vs-ku9" secondAttribute="bottom" id="uuG-FM-lgT"/>
+                    <constraint firstAttribute="trailing" secondItem="XBh-5C-HaS" secondAttribute="trailing" constant="6" id="xBm-OK-aEm"/>
+                    <constraint firstItem="QJB-sf-mQt" firstAttribute="leading" secondItem="6co-V4-vbc" secondAttribute="trailing" constant="3" id="yK2-3p-UHO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageForIcon" destination="6co-V4-vbc" id="oaq-ev-QVH"/>
+                <outlet property="textField" destination="QJB-sf-mQt" id="cZ2-Ui-FaX"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </tableViewCell>
+    </objects>
+</document>
